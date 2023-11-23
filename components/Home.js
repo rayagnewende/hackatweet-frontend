@@ -1,11 +1,16 @@
-import styles from "../styles/login.module.css"
-
+import styles from "../styles/Home.module.css"; 
 
 function Home() {
   return (
     <div className={styles.home}>
-     <h1>bienvenue dans le HOME!</h1>
-         
+     <div className="leftBlock">
+          lorem 1
+     </div>
+     <div className="middleBlock">
+      lorem ?
+      </div>
+     <div className="rightBlock">
+      lorem ? </div>
     </div>
   );
 }

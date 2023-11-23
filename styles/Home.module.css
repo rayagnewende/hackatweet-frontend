@@ -1,3 +1,18 @@
 .home {
+  display: grid ;
+  grid-template-columns: 20% 60% 20%; 
+  grid-template-rows: repeat(5,20%);
+  background-color: black;
+  color:white;
+}
+
+.left-block {
   
+}
+.middle-block {
+
+}
+
+.right-block { 
+
 }

@@ -23,13 +23,14 @@ function Signup() {
             username:username, 
             password:password
         })
-        .then( data => {
-            if(data.result)
-            {
-                window.location.href = "/home"; 
-            }
-        })
-    } )
+    })
+    .then( res => res.json())
+    .then( data => {
+        if(data.result)
+        {
+            window.location.href = "/home"; 
+        }
+    })
    }
 
   return (
