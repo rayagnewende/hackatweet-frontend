@@ -1,0 +1,19 @@
+
+
+.login {
+    width: 100vw;
+    height: 100vh;
+   /* display: flex; */
+}
+.image { 
+   /* width:  40vw;
+   height: 100vh; */
+   flex:1; 
+
+}
+.right-block {
+   /* width: 60vw;
+   height: 100vh; */
+   background-color: black;
+   flex:3;
+}
