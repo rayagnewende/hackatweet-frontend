@@ -1,18 +1,45 @@
 .home {
   display: grid ;
-  grid-template-columns: 20% 60% 20%; 
-  grid-template-rows: repeat(5,20%);
-  background-color: black;
+  grid-template-columns: 20% 50% 30%; 
+  grid-template-rows: repeat(5, 20%);
   color:white;
+  background-color: rgb(23,32,42);
+  width: 100vw;
+  height: 100vh;
 }
 
 .left-block {
-  
+  display: flex;
+  flex-direction: column;
+  grid-column-start: 1;
+  grid-column-end:2 ;
+  border: 2px solid white;
 }
 .middle-block {
+  grid-column-start: 2;
+  grid-column-end:3 ;
 
 }
 
 .right-block { 
+  grid-column-start: 3;
+  grid-column-end:4 ;
 
+}
+
+.icon {
+  margin-top: 20px;
+  margin-left: 20px; 
+  width: 60px;
+  height: 60px;
+}
+
+.avatar {
+  width: 70px; 
+  height: 70px;
+  border-radius: 15px;
+  margin-left: 20px;
+  position: absolute;
+  left: 0%;
+  bottom: 5%;
 }

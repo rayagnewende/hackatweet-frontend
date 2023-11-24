@@ -1,7 +1,64 @@
 .signin {
-
-}
-.signin-modal {
-
-}
-
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    top:0; 
+    bottom: 0;
+    right: 0;
+    background-color:rgba(0,0,0, 0.4);
+ 
+ }
+ .signin-modal {
+     /* background-color:rgb(23,32,42); */
+     width: 400px;
+     height: 600px;
+     padding: 20px;
+     border: 1px solid rgb(23,32,42);
+     z-index: 2;
+ }
+ .close {
+     color: white;
+     float: right;
+     font-size: 20px;
+     font-weight: bold;
+   }
+ 
+   .inputfield{
+     width: 200px;
+     height: 40px;
+     border: 1px solid white;
+     background-color: rgb(23,32,42);
+     border-radius: 15px;
+     padding: 15px 8px;
+     margin: 10px 0;  
+     color:white
+   }
+ 
+   .inputContainer {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+   }
+ 
+   .signinBtn {
+     width: 200px;
+     height: 40px;
+     background-color: white;
+     color:rgb(23,32,42); 
+     border-radius: 15px;
+   }
+ 
+   .title {
+     color: white;
+     font-weight: bold;
+     font-size: 20px;
+   }
+ 
+ 
+ 

@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import styles from '../styles/signin.module.css'; 
 import { useState } from "react";
 
-function Signin() {
+function Signin(props) {
     const [username, setUsername] = useState(""); 
     const [password, setPassword] = useState(""); 
 
@@ -27,22 +27,25 @@ function Signin() {
         {
             window.location.href = "/home"; 
         }
+        setPassword(""); 
+        setUsername("")
     })
     }
 
   return (
     <div className={styles.signin}>
           <div className={styles.signinModal}>
-                <div className="croix">
-                        X
+                <div className={styles.close} onClick={() => props.closeSignInModal()}>
+                        x
                 </div>
-                <FontAwesomeIcon   icon={faTwitter}   />
-                <p>Connect to Hackatweet</p>
-                <div className="inputContainer">
-                    <input type="text"  onChange={ e => setUsername(e.target.value)}  />
-                    <input type="text"  onChange={ e => setPassword(e.target.value)}  />
+                <FontAwesomeIcon   icon={faTwitter}  style={{ width:'50px', height:'60px', marginTop:'10px', marginLeft:'100px'}}  />
+                <p className={styles.title} >Connect to Hackatweet</p>
+                <div className={styles.inputContainer}>
+                    <input type="text" placeholder="username" className={styles.inputfield}  onChange={ e => setUsername(e.target.value)}  />
+                    <input type="text" placeholder="password" className={styles.inputfield} onChange={ e => setPassword(e.target.value)}  />
+                    <button  className={styles.signinBtn} onClick={ () => handleSinInForm()}>Sign In</button>
                 </div>
-                <button onClick={ () => handleSinInForm()}>Sign In</button>
+                
           </div>
     </div>
   );

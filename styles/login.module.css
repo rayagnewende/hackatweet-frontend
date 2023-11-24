@@ -1,19 +1,50 @@
-
-
 .login {
-    width: 100vw;
-    height: 100vh;
-   /* display: flex; */
+ display: grid;
+ grid-template-columns: 45% 55% ;
+ background-color:rgb(23,32,42);
+ color: white; 
 }
-.image { 
-   /* width:  40vw;
-   height: 100vh; */
-   flex:1; 
+.title {
+  font-size: 70px;
+  margin-left: 30px;
+}
+.left-marge {
+  margin-left: 30px;
+}
+.icon {
+  width: 200px;
+  height: 200px;
+  margin-top: 300px;
+  margin-left: 150px;
+}
+.icon2 {
+  width: 60px;
+  height: 60px;
+  margin-left: 30px;
+}
+.left-image { 
+ grid-column-start: 1;
+ grid-column-end: 3;
 
 }
 .right-block {
-   /* width: 60vw;
-   height: 100vh; */
-   background-color: black;
-   flex:3;
+grid-column-start: 3;
+grid-column-end: 6;
+grid-row-start: 1;
+grid-row-end: 6;
+}
+.signin {
+  color: rgb(71,139, 199);
+  background-color:rgb(23,32,42);
+  padding: 10px 60px;
+  margin-left: 30px;
+  border-radius: 15px;
+  border: 2px solid  rgb(71,139, 199);
+}
+.signup {
+  background-color: rgb(71,139, 199);
+  padding: 10px 60px;
+  margin-left: 30px;
+  border-radius: 15px;
+  color:white
 }
